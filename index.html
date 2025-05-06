@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O‘quv reja: Ta’limning muvaffaqiyat kaliti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .slide { display: none; opacity: 0; transition: opacity 1s ease; }
+        .active { display: block; opacity: 1; }
+        .fade { animation: fade 1s; }
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .icon { width: 40px; height: 40px; }
+        .decorative-border { border: 2px solid transparent; border-image: linear-gradient(to right, #3b82f6, #facc15) 1; }
+        .bg-slide { background: linear-gradient(135deg, #e0f2fe, #fefce8); }
+        @media (max-width: 640px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.25rem; }
+            img { max-width: 100%; height: auto; }
+            .grid-cols-2 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 via-yellow-100 to-green-100">
+    <div class="container mx-auto p-8">
+        <div id="slides" class="relative bg-white rounded-xl shadow-2xl p-10 max-w-5xl mx-auto decorative-border">
+            <!-- Slide 1: Kirish -->
+            <div class="slide active fade bg-slide">
+                <h1 class="text-4xl font-bold text-center text-blue-800 mb-6">O‘quv reja: Ta’limning muvaffaqiyat kaliti</h1>
+                <p class="text-lg text-gray-800 text-center mb-4">O‘quv rejasi – ta’lim jarayonini tashkil qilishning asosiy vositasi. U o‘qituvchilar va o‘quvchilarga yo‘l ko‘rsatadi, sifatli ta’limni ta’minlaydi. O‘zbekistonda 2023-yilda 10,000 dan ortiq maktab o‘quv rejasiga asoslangan holda ishlaydi!</p>
+                <p class="text-center text-blue-600 font-semibold">Interaktiv savol: O‘quv rejasiz ta’lim jarayoni qanday muammolarga duch keladi? 🤔</p>
+                <img src="https://www.uzedu.uz/uploads/2022/12/Vbiq1JjQcyNFUBwjTyDXNxfcO7N1USS1.jpg" alt="Sinf xonasi" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 2: O‘quv rejasining ta’rifi -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">O‘quv rejasi nima?</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi – ta’lim jarayonini tartibga soluvchi hujjat bo‘lib, quyidagilarni o‘z ichiga oladi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>Mavzularning mantiqiy ketma-ketligi</li>
+                    <li>Har bir fan uchun dars soatlari (masalan, matematika uchun yiliga 136 soat)</li>
+                    <li>Baholash usullari: testlar, loyihalar, amaliyot</li>
+                    <li>Kutilayotgan ta’lim natijalari</li>
+                </ul>
+                <div class="flex items-center justify-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" alt="Kalendar ikonkasi" class="icon mr-2">
+                    <p class="text-blue-600 font-semibold">Qiziqarli fakt: O‘zbekistonda o‘quv rejalari har yili yangilanadi!</p>
+                </div>
+                <img src="https://bsmi.uz/wp-content/uploads/2022/08/grafik-2022.png" alt="O‘quv rejasi jadvallari" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 3: O‘quv rejasining maqsadlari -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">O‘quv rejasining maqsadlari</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi quyidagi maqsadlarni ko‘zlaydi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>Bilimlarni tizimli yetkazish (masalan, 5-sinfda 10 ta asosiy fan)</li>
+                    <li>O‘quvchilarning analitik va ijodiy ko‘nikmalarini rivojlantirish</li>
+                    <li>Ta’lim natijalarini aniqlash va baholash</li>
+                </ul>
+                <p class="text-blue-600 font-semibold text-center">Misoldan: O‘zbekistonda o‘quv rejasi o‘quvchilarning STEAM (fan, texnologiya, muhandislik, san’at, matematika) ko‘nikmalarini rivojlantirishga yordam beradi.</p>
+                <img src="https://lh3.googleusercontent.com/proxy/3nyfH_OCTXf0IhfRQ0P_NK9YK7mML1FluOmMIG0ojdU78kkzTrvdSBc_le0Y5rhLsz5ecZC_0tggUGeGKq-JHq_cJA2ySPKENw" alt="Matematika darsi" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 4: Tizimlilik va tartib -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">Tizimlilik va tartib</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi materiallarni mantiqiy tartibda joylashtiradi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>Mavzular bosqichma-bosqich o‘rganiladi (masalan, tarixda o‘rta asrlardan yangi davrga)</li>
+                    <li>Bilimlar mustahkamlanadi, takrorlanadi</li>
+                    <li>O‘zbekistonda o‘quv yili 4 chorakka bo‘lingan holda tashkil etiladi</li>
+                </ul>
+                <p class="text-blue-600 font-semibold text-center">Interaktiv savol: Sizning o‘quv rejangiz qanchalik tizimli deb hisoblaysiz? 🧠</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TO0wPEQmDC1nCTOua0wGs8gRILUrHMIB-g&s" alt="Tizimli ta’lim" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 5: Vaqt boshqaruvi -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">Vaqt boshqaruvi</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi vaqtni samarali taqsimlaydi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>Har bir mavzu uchun aniq soatlar (masalan, ona tili uchun haftada 4 soat)</li>
+                    <li>Darslarning uzluksiz o‘tishi ta’minlanadi</li>
+                    <li>O‘zbekistonda o‘quv yili sentyabrdan maygacha davom etadi</li>
+                </ul>
+                <div class="flex items-center justify-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/clock.png" alt="Soat ikonkasi" class="icon mr-2">
+                    <p class="text-blue-600 font-semibold">Qiziqarli fakt: O‘quv rejasi o‘qituvchilarga vaqtni 30% samarali boshqarishga yordam beradi!</p>
+                </div>
+                <img src="https://azbyka.com.ua/wp-content/uploads/upravlenie-vremenem11.jpg" alt="Vaqt boshqaruvi" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 6: Resurslardan foydalanish -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">Resurslardan foydalanish</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi resurslarni samarali rejalashtiradi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>O‘qituvchilar: har bir fan uchun mutaxassislar</li>
+                    <li>O‘quv materiallari: darsliklar, raqamli resurslar</li>
+                    <li>Texnologik vositalar: interaktiv doskalar, onlayn platformalar</li>
+                </ul>
+                <p class="text-blue-600 font-semibold text-center">Misoldan: O‘zbekistonda 2022-yilda 5000 dan ortiq maktab raqamli resurslar bilan ta’minlandi!</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOxjcFKrKdjsEESzquqGEdUTCSf1r3vXnang&s" alt="Texnologiyalar" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 7: O‘quvchilar uchun yo‘l xaritasi -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">O‘quvchilar uchun yo‘l xaritasi</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi o‘quvchilarga quyidagilarni ta’minlaydi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>Mavzularni oldindan bilish (masalan, 6-sinf biologiyasi)</li>
+                    <li>Imtihonlarga tayyorgarlik jadvali</li>
+                    <li>Mustaqil o‘qish uchun yo‘nalish</li>
+                </ul>
+                <p class="text-blue-600 font-semibold text-center">Interaktiv savol: Sizning o‘quv rejangiz qanday yordam beradi? 🚀</p>
+                <img src="https://static.oliygoh.uz/crop/1/0/832__85_1077516525.jpg?t=1700713289" alt="O‘quvchilar" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 8: Afzalliklari -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">O‘quv rejasining afzalliklari</h2>
+                <p class="text-gray-800 mb-4">O‘quv rejasi barcha ishtirokchilarga foyda keltiradi:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li><strong>O‘qituvchilar:</strong> Darslarni tashkil qilishda qo‘llanma</li>
+                    <li><strong>O‘quvchilar:</strong> Maqsadlarni aniq tushunish</li>
+                    <li><strong>Muassasalar:</strong> Ta’lim sifatini monitoring qilish</li>
+                </ul>
+                <div class="flex items-center justify-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/graduation-cap.png" alt="Diplom ikonkasi" class="icon mr-2">
+                    <p class="text-blue-600 font-semibold">Misoldan: O‘zbekistonda o‘quv rejalari o‘quvchilarning 80% muvaffaqiyat darajasini oshiradi!</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDQX4w4d5XmLfS0rW8mGbP2M50XvaVZpb_wg&s" alt="Ta’lim sifati" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 9: Takomillashtirish yo‘llari -->
+            <div class="slide fade bg-slide">
+                <h2 class="text-3xl font-semibold text-blue-700 mb-6">O‘quv rejasini yaxshilash yo‘llari</h2>
+                <p class="text-gray-800 mb-4">Zamonaviy talablarga moslashish uchun:</p>
+                <ul class="list-disc list-inside text-gray-800 mb-4">
+                    <li>Raqamli platformalarni joriy etish (masalan, Kundalik.uz)</li>
+                    <li>O‘quvchilarning individual ehtiyojlariga mos rejalar</li>
+                    <li>Moslashuvchanlik: yangi fanlar va loyihalar qo‘shish</li>
+                </ul>
+                <div class="flex items-center justify-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/laptop.png" alt="Laptop ikonkasi" class="icon mr-2">
+                    <p class="text-blue-600 font-semibold">Qiziqarli fakt: Dunyoda 60% maktablar raqamli o‘quv rejalariga o‘tmoqda!</p>
+                </div>
+                <img src="https://iiau.uz/storage/78/20/86/7044/conversions/rttm-large.jpg" alt="Raqamli ta’lim" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+
+            <!-- Slide 10: Xulosa -->
+            <div class="slide fade bg-slide">
+                <h1 class="text-4xl font-bold text-center text-blue-800 mb-6">Xulosa</h1>
+                <p class="text-lg text-gray-800 text-center mb-4">O‘quv rejasi – ta’limning muvaffaqiyatli bo‘lishi uchun muhim poydevor. U tizimli, samarali va qiziqarli ta’limni ta’minlaydi. O‘zbekistonda 2024-yilda o‘quv rejalari yanada raqamlashtirilmoqda!</p>
+                <p class="text-center text-blue-600 font-semibold">Mini-viktorina: O‘quv rejasining eng muhim jihati nima edi? Javobingizni yozing! 📝</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHq8hH72RFBxGqYdUoXe6RhlYhRisRn2fVw&s" alt="Muvaffaqiyat" class="mx-auto mt-6 rounded-lg shadow-md max-w-md">
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between mt-6">
+            <button id="prev" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">Oldingi</button>
+            <button id="next" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">Keyingi</button>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'fade');
+                slide.style.display = 'none';
+                slide.style.opacity = '0';
+                if (i === index) {
+                    slide.classList.add('active', 'fade');
+                    slide.style.display = 'block';
+                    slide.style.opacity = '1';
+                }
+            });
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+            gsap.from('.active', { opacity: 0, y: 50, duration: 1, ease: 'power2.out' });
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+            gsap.from('.active', { opacity: 0, y: -50, duration: 1, ease: 'power2.out' });
+        });
+
+        // Initial slide setup
+        showSlide(currentSlide);
+        gsap.from('.active', { opacity: 0, scale: 0.9, duration: 1.2, ease: 'power2.out' });
+    </script>
+</body>
+</html>
